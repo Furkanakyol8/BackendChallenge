@@ -102,4 +102,4 @@ içerisinde bu değer geçen müşteri ve müşteriye ait sipariş id sini getir
  Fonksiyon ismi: **getOrderIdByCustomerName()**  
  Fonksiyon girdileri: String word  
  Fonksiyon çıktıları: true, "", findWithOrdersByContainingWord  
- Açıklama: parametre olarak verilen harf veya kelimeler içeren müşterileri ve bu müşterilerin siparişlerini listeler.
+ Açıklama: parametre olarak verilen harf veya kelimeler içeren müşterileri ve bu müşterilerin siparişlerini listeler. 
