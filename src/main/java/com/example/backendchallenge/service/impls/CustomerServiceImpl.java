@@ -61,11 +61,11 @@ public class CustomerServiceImpl implements CustomerService {
 
 
     public DataResponse<List<CustomerWithOrderIdDto>> getWithOrdersByContainingWord(String word) {
-        return new DataResponse<>(true, "", customerRepository.findWithOrdersByContainingWord(word));
+        return new DataResponse<>(true, "Listed '" + word + "'", customerRepository.findWithOrdersByContainingWord(word));
     }
 
     public DataResponse<List<Customer>> getCustomersWithoutOrders() {
-        return new DataResponse<>(true, "customers shown without orders", customerRepository.findCustomersWithoutOrders());
+        return new DataResponse<>(true, "Customers Shown Without Orders", customerRepository.findCustomersWithoutOrders());
     }
 
 }

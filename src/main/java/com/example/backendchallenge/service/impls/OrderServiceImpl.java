@@ -28,9 +28,6 @@ public class OrderServiceImpl implements OrderService {
         this.modelMapper = modelMapper;
     }
 
-    public DataResponse<List<Order>> getOrdersAfterDate(Date date) {
-        return new DataResponse<>(true, "All Orders Listed with date", orderRepository.findByCreateDateAfter(date));
-    }
 
     @Override
     public DataResponse<Order> create(CreateOrderDto createOrderDto) {
@@ -64,5 +61,9 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public DataResponse<List<Order>> getAll() {
         return new DataResponse<>(true, "All Orders Listed", orderRepository.findAll());
+    }
+
+    public DataResponse<List<Order>> getOrdersAfterDate(Date date) {
+        return new DataResponse<>(true, "All Orders Listed With After The Date", orderRepository.findByCreateDateAfter(date));
     }
 }

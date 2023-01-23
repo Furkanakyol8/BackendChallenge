@@ -23,16 +23,6 @@ public class CustomerController {
         this.customerService = customerService;
     }
 
-    @GetMapping("/withOrders/{word}")
-    public ResponseEntity<?> getOrderIdsByCustomerName(@PathVariable String word) {
-        return ResponseEntity.ok(customerService.getWithOrdersByContainingWord(word));
-    }
-
-    @GetMapping("/without-orders")
-    public ResponseEntity<?> getCustomersWithoutOrders() {
-        //List<Customer> customers = customerService.getCustomersWithoutOrders();
-        return ResponseEntity.ok(customerService.getCustomersWithoutOrders());
-    }
 
     @PostMapping
     private ResponseEntity<?> create(@RequestBody CreateCustomerDto customer) {
@@ -57,6 +47,17 @@ public class CustomerController {
     @GetMapping
     private ResponseEntity<?> getAll() {
         return ResponseEntity.ok(customerService.getAll());
+    }
+
+    @GetMapping("/withOrders/{word}")
+    public ResponseEntity<?> getOrderIdByCustomerName(@PathVariable String word) {
+        return ResponseEntity.ok(customerService.getWithOrdersByContainingWord(word));
+    }
+
+    @GetMapping("/without-orders")
+    public ResponseEntity<?> getCustomersWithoutOrders() {
+        //List<Customer> customers = customerService.getCustomersWithoutOrders();
+        return ResponseEntity.ok(customerService.getCustomersWithoutOrders());
     }
 
 }
