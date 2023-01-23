@@ -1,7 +1,7 @@
 # BackendChallenge
 
 Projede kullanılmak üzere Customer ve Order tabloları mevcuttur. Tablolar birbirlerine One-to-Many ilişkisiyle bağlanmıştır. Challenge ekinde bahsedilen 3 servis
-için CustomerRepository ve OrderRepository içerisinde SQL kodları ve Fonksiyonlar mevcuttur.
+için CustomerRepository ve OrderRepository içerisinde java sorgu kodları ve fonksiyonlar mevcuttur.
 
 
 Customer Tablosu aşağıdaki nitelikleri barındırır;
