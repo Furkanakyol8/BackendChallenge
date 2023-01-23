@@ -1,6 +1,6 @@
 # BackendChallenge
 
-Projede kullanılmak üzere Customer ve Order tabloları mevcuttur. Tablolar birbirlerine One-to-Many ilişkisiyle bağlanmıştır. Challenge ekinde bahsedilen 3 servis
+Veritabanı olarak postgresql kullanılmıştır. Projede kullanılmak üzere Customer ve Order tabloları mevcuttur. Tablolar birbirlerine One-to-Many ilişkisiyle bağlanmıştır. Challenge ekinde bahsedilen 3 servis
 için CustomerRepository ve OrderRepository içerisinde java sorgu kodları ve fonksiyonlar mevcuttur.
 
 
